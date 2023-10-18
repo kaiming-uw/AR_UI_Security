@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "InvisibilityTest"
+include ':app'
+include ':sceneform'
+include ':core'
+include ':invisibilitytest'
+include ':ux'

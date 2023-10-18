@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "SameSpaceTest"
+include ':app'
+include ':samespacetest'
+include ':core'
+include ':sceneform'
+include ':ux'

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gck-mf-VQu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="d1D-EM-IQ3">
+            <objects>
+                <viewController id="Gck-mf-VQu" userLabel="ARView" customClass="ViewController" customModule="OverlappingObjects" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVM-XP-7u6"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCJ-qt-HjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwj-IB-ZEX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pen-tB-Bie" userLabel="ARView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omK-JA-Fya">
+                                <rect key="frame" x="20" y="692" width="171" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="liB-us-vJj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <connections>
+                                    <action selector="onNextClick:" destination="Gck-mf-VQu" eventType="touchUpInside" id="eNh-Cy-DcX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 1, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igm-A4-BHB" userLabel="Cube1Count">
+                                <rect key="frame" x="20" y="52" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 3, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-ru-Ffw" userLabel="Cube3Count">
+                                <rect key="frame" x="20" y="91" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 4, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rX-Zh-L2x" userLabel="Cube4Count">
+                                <rect key="frame" x="20" y="111" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 2, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-X9-bW4" userLabel="Cube2Count">
+                                <rect key="frame" x="20" y="73" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to place an anchor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhP-P6-Kud" userLabel="Place Anchor Prompt">
+                                <rect key="frame" x="121" y="189" width="172.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pen-tB-Bie" firstAttribute="bottom" secondItem="oCJ-qt-HjT" secondAttribute="top" id="106-cq-afg"/>
+                            <constraint firstItem="MRu-ru-Ffw" firstAttribute="top" secondItem="Igm-A4-BHB" secondAttribute="bottom" constant="18" id="7OL-Om-q5O"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="trailing" secondItem="J6A-X9-bW4" secondAttribute="trailing" id="7ZD-BK-3Dh"/>
+                            <constraint firstItem="Igm-A4-BHB" firstAttribute="top" secondItem="cVM-XP-7u6" secondAttribute="bottom" constant="8" symbolic="YES" id="8rN-9Y-1V0"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="leading" secondItem="MRu-ru-Ffw" secondAttribute="leading" id="CpR-Nb-gea"/>
+                            <constraint firstItem="oCJ-qt-HjT" firstAttribute="top" secondItem="omK-JA-Fya" secondAttribute="bottom" constant="136" id="DHI-b0-Dgy"/>
+                            <constraint firstItem="omK-JA-Fya" firstAttribute="leading" secondItem="7rX-Zh-L2x" secondAttribute="leading" id="FSo-fF-9Ec"/>
+                            <constraint firstItem="Igm-A4-BHB" firstAttribute="leading" secondItem="bwj-IB-ZEX" secondAttribute="leadingMargin" id="Flj-KS-AjJ"/>
+                            <constraint firstItem="RhP-P6-Kud" firstAttribute="top" secondItem="7rX-Zh-L2x" secondAttribute="bottom" constant="57" id="LUl-oB-SSx"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="trailing" secondItem="Igm-A4-BHB" secondAttribute="trailing" id="UQL-eg-41T"/>
+                            <constraint firstItem="Pen-tB-Bie" firstAttribute="centerX" secondItem="RhP-P6-Kud" secondAttribute="centerX" id="XIy-1q-Mub"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="trailing" secondItem="MRu-ru-Ffw" secondAttribute="trailing" id="Ytc-2X-in8"/>
+                            <constraint firstItem="Pen-tB-Bie" firstAttribute="top" secondItem="bwj-IB-ZEX" secondAttribute="top" id="aaZ-r3-RdH"/>
+                            <constraint firstItem="RhP-P6-Kud" firstAttribute="centerX" secondItem="bwj-IB-ZEX" secondAttribute="centerX" id="dkQ-ca-lkQ"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="top" secondItem="bwj-IB-ZEX" secondAttribute="top" constant="111" id="g8a-VX-sCg"/>
+                            <constraint firstItem="Pen-tB-Bie" firstAttribute="leading" secondItem="bwj-IB-ZEX" secondAttribute="leading" id="iby-zZ-ill"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="leading" secondItem="J6A-X9-bW4" secondAttribute="leading" id="pkg-wy-4CV"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="top" secondItem="J6A-X9-bW4" secondAttribute="bottom" constant="17" id="qGY-1C-0NY"/>
+                            <constraint firstItem="7rX-Zh-L2x" firstAttribute="leading" secondItem="Igm-A4-BHB" secondAttribute="leading" id="y5Q-d2-2fa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Igm-A4-BHB" secondAttribute="trailing" constant="180" id="zeo-eG-MY3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Cube1Count" destination="Igm-A4-BHB" id="j78-x5-sGI"/>
+                        <outlet property="Cube2Count" destination="J6A-X9-bW4" id="jwV-71-tkn"/>
+                        <outlet property="Cube3Count" destination="MRu-ru-Ffw" id="4tT-b0-j9l"/>
+                        <outlet property="Cube4Count" destination="7rX-Zh-L2x" id="9NX-YT-WeJ"/>
+                        <outlet property="PlaceAnchorPrompt" destination="RhP-P6-Kud" id="vV3-Ha-KzJ"/>
+                        <outlet property="arView" destination="Pen-tB-Bie" id="4Oo-Y4-vXq"/>
+                        <outlet property="button" destination="omK-JA-Fya" id="O1t-lW-LDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ra6-Cg-3pL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317.39130434782612" y="-540.40178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

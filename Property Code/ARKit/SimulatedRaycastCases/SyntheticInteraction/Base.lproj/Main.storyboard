@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qqW-Dq-8gq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="GbS-SA-sVd">
+            <objects>
+                <viewController id="qqW-Dq-8gq" userLabel="ARView" customClass="ViewController" customModule="SyntheticInteraction" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3B-5H-zp5"/>
+                        <viewControllerLayoutGuide type="bottom" id="UCc-1R-H1E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AbS-AT-E9O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-31-dZP" userLabel="ARView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 1, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0g-RZ-4CU" userLabel="Cube1Count">
+                                <rect key="frame" x="20" y="52" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tap to place an anchor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-ED-7Pm" userLabel="Place Anchor Prompt">
+                                <rect key="frame" x="120.5" y="189" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-yV-oMJ">
+                                <rect key="frame" x="20" y="687" width="301" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Ldf-gr-UR6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tap screen to place an anchor"/>
+                                <connections>
+                                    <action selector="onNextClick:" destination="qqW-Dq-8gq" eventType="touchUpInside" id="5hH-Gu-AaQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ESz-Tm-dc7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a0g-RZ-4CU" firstAttribute="top" secondItem="A3B-5H-zp5" secondAttribute="bottom" constant="8" symbolic="YES" id="6gy-f5-6p6"/>
+                            <constraint firstItem="eaO-31-dZP" firstAttribute="top" secondItem="AbS-AT-E9O" secondAttribute="top" id="6jy-Ts-O5a"/>
+                            <constraint firstItem="eaO-31-dZP" firstAttribute="centerX" secondItem="ue1-ED-7Pm" secondAttribute="centerX" id="9Pr-rD-ccC"/>
+                            <constraint firstItem="ue1-ED-7Pm" firstAttribute="centerX" secondItem="AbS-AT-E9O" secondAttribute="centerX" id="LTH-jG-v2E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a0g-RZ-4CU" secondAttribute="trailing" constant="180" id="M2f-hJ-2Yw"/>
+                            <constraint firstItem="eaO-31-dZP" firstAttribute="bottom" secondItem="UCc-1R-H1E" secondAttribute="top" id="NPM-aT-goR"/>
+                            <constraint firstItem="UCc-1R-H1E" firstAttribute="top" secondItem="zg4-yV-oMJ" secondAttribute="bottom" constant="136" id="Yn9-pZ-835"/>
+                            <constraint firstItem="a0g-RZ-4CU" firstAttribute="leading" secondItem="AbS-AT-E9O" secondAttribute="leadingMargin" id="eWb-WB-Q4d"/>
+                            <constraint firstItem="eaO-31-dZP" firstAttribute="leading" secondItem="AbS-AT-E9O" secondAttribute="leading" id="j4p-ta-VDb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Cube1Count" destination="a0g-RZ-4CU" id="nWY-Qk-CMf"/>
+                        <outlet property="PlaceAnchorPrompt" destination="ue1-ED-7Pm" id="tli-MF-XEt"/>
+                        <outlet property="arView" destination="eaO-31-dZP" id="vut-8x-cQW"/>
+                        <outlet property="button" destination="zg4-yV-oMJ" id="nnX-r6-ygh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNN-du-1M0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317.39130434782612" y="-540.40178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

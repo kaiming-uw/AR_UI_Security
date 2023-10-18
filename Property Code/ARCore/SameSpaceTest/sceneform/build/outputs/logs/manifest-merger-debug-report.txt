@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml:17:1-20:12
+	package
+		ADDED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml:19:5-48
+		INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+		INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml:18:5-63
+uses-sdk
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+		ADDED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+		INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+		ADDED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml
+		INJECTED from /Users/arkabhat/Documents/XR-Research/RealityCheckerFinal/ARCore/SameSpaceTest/sceneform/src/main/AndroidManifest.xml

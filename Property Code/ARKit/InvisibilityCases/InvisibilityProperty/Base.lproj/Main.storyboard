@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MTq-76-Y6T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="G4P-sZ-Wg8">
+            <objects>
+                <viewController id="MTq-76-Y6T" userLabel="ARView" customClass="ViewController" customModule="InvisibilityProperty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kfh-Us-jwz"/>
+                        <viewControllerLayoutGuide type="bottom" id="OTn-0Q-T4e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QnN-va-N5z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZ8-vb-BqC" userLabel="ARView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZR-al-xph">
+                                <rect key="frame" x="20" y="695" width="110" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="yqL-WC-ws4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <connections>
+                                    <action selector="onNextClick:" destination="MTq-76-Y6T" eventType="touchUpInside" id="7d8-bt-ygK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 1, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L3-FY-PrG" userLabel="Cube1Count">
+                                <rect key="frame" x="20" y="52" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 3.1, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ly3-mf-Doi" userLabel="Cube3_1Count">
+                                <rect key="frame" x="20" y="91" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 3.2, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQS-NN-rKF" userLabel="Cube3_2Count">
+                                <rect key="frame" x="20" y="111" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cube 3.3, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-Of-5we" userLabel="Cube3_3Count">
+                                <rect key="frame" x="20" y="132" width="194" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cube 2, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKf-eR-Ml9" userLabel="Cube2Count">
+                                <rect key="frame" x="20" y="73" width="194" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to place an anchor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-IX-Nb9" userLabel="Place Anchor Prompt">
+                                <rect key="frame" x="121" y="189" width="172.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cube 3.4, Clicked 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fue-KI-uZJ" userLabel="Cube3_4Count">
+                                <rect key="frame" x="20" y="151" width="194" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nho-ua-WGc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7L3-FY-PrG" firstAttribute="top" secondItem="Kfh-Us-jwz" secondAttribute="bottom" constant="8" symbolic="YES" id="1YB-sl-XNT"/>
+                            <constraint firstItem="lZ8-vb-BqC" firstAttribute="top" secondItem="QnN-va-N5z" secondAttribute="top" id="4TG-Ou-OVx"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="leading" secondItem="Ly3-mf-Doi" secondAttribute="leading" id="DzO-Ek-qfe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7L3-FY-PrG" secondAttribute="trailing" constant="180" id="KYN-F6-Nau"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="top" secondItem="QnN-va-N5z" secondAttribute="top" constant="111" id="Mmv-0s-Sgw"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="trailing" secondItem="7L3-FY-PrG" secondAttribute="trailing" id="NGE-KR-Zl7"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="top" secondItem="qKf-eR-Ml9" secondAttribute="bottom" constant="17" id="Njt-kP-je9"/>
+                            <constraint firstItem="OTn-0Q-T4e" firstAttribute="top" secondItem="zZR-al-xph" secondAttribute="bottom" constant="136" id="WCn-CC-lBd"/>
+                            <constraint firstItem="UaZ-IX-Nb9" firstAttribute="centerX" secondItem="QnN-va-N5z" secondAttribute="centerX" id="WIv-aB-j8e"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="trailing" secondItem="Ly3-mf-Doi" secondAttribute="trailing" id="bgS-fk-Tm8"/>
+                            <constraint firstItem="Ly3-mf-Doi" firstAttribute="top" secondItem="7L3-FY-PrG" secondAttribute="bottom" constant="18" id="exV-BW-tRG"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="trailing" secondItem="qKf-eR-Ml9" secondAttribute="trailing" id="f9p-Tk-c2Y"/>
+                            <constraint firstItem="lZ8-vb-BqC" firstAttribute="bottom" secondItem="OTn-0Q-T4e" secondAttribute="top" id="hFp-29-rI8"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="leading" secondItem="qKf-eR-Ml9" secondAttribute="leading" id="kk0-Eg-6FS"/>
+                            <constraint firstItem="UQS-NN-rKF" firstAttribute="leading" secondItem="7L3-FY-PrG" secondAttribute="leading" id="llp-eu-NEW"/>
+                            <constraint firstItem="lZ8-vb-BqC" firstAttribute="leading" secondItem="QnN-va-N5z" secondAttribute="leading" id="p0E-pE-apf"/>
+                            <constraint firstItem="7L3-FY-PrG" firstAttribute="leading" secondItem="QnN-va-N5z" secondAttribute="leadingMargin" id="ppH-gg-uqD"/>
+                            <constraint firstItem="zZR-al-xph" firstAttribute="leading" secondItem="UQS-NN-rKF" secondAttribute="leading" id="tay-zs-wEx"/>
+                            <constraint firstItem="lZ8-vb-BqC" firstAttribute="centerX" secondItem="UaZ-IX-Nb9" secondAttribute="centerX" id="wmf-7c-7pI"/>
+                            <constraint firstItem="UaZ-IX-Nb9" firstAttribute="top" secondItem="UQS-NN-rKF" secondAttribute="bottom" constant="57" id="yB3-PF-so2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Cube1Count" destination="7L3-FY-PrG" id="wOI-cR-Uks"/>
+                        <outlet property="Cube2Count" destination="qKf-eR-Ml9" id="oY8-Wx-lEE"/>
+                        <outlet property="Cube3_1Count" destination="Ly3-mf-Doi" id="82a-TE-fRy"/>
+                        <outlet property="Cube3_2Count" destination="UQS-NN-rKF" id="hub-tB-53e"/>
+                        <outlet property="Cube3_3Count" destination="fbt-Of-5we" id="LH3-th-XVE"/>
+                        <outlet property="Cube3_4Count" destination="Fue-KI-uZJ" id="SSS-yA-PjZ"/>
+                        <outlet property="PlaceAnchorPrompt" destination="UaZ-IX-Nb9" id="L0K-d3-t3P"/>
+                        <outlet property="arView" destination="lZ8-vb-BqC" id="1YB-CL-BtC"/>
+                        <outlet property="button" destination="zZR-al-xph" id="XDe-zN-JHq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3E-dj-gjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317.39130434782612" y="-540.40178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

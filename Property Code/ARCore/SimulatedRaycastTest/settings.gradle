@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "SimulatedRaycastTest"
+include ':app'
+include ':sceneform'
+include ':core'
+include ':ux'
+include ':simulatedraycasttest'
