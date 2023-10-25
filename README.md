@@ -21,19 +21,17 @@ in the AR world that are transparent? To what extent, if any, does an object’s
 
 
 
-### Part 2 -- Proof-of-concept attacks 
-The proof-of-concept code for five attacks.  
+### Part 2 -- Proof-of-concept attacks
+The proof-of-concept video for five attacks. (will upload the video soon)
 * Input forgery attack on ARCore (Demo Link)
 * Clickjacking attack: Implemented on ARKit (Demo Link) 
 * User input denial-of-service attack on Hololens (Demo Link)
 * Object-in-the-middle attack on Oculus (Demo Link)
 * Object erasure attack on WebXR (Demo Link)
 
-
-
 ## Prerequisites
 
-Please ensure you have the following environments setup with all the dependencies
+Please ensure you have the following environments set up with all the dependencies
 to be able to reproduce the artifacts in the paper. Due to the complexity of Unity, we provided the apk file to reproduce the results.
 
 #### ARCore
@@ -41,7 +39,6 @@ Hardware: Tested on Pixel 5a <br>
 Software: 
 * ARCore v1.32.0
 * Sceneform SDK v 1.20.5
-
 > Note: The Sceneform SDK is no longer supported by Google at the time this paper is published. 
 
 #### ARKit
@@ -58,8 +55,8 @@ Software:
 #### Oculus
 Hardware: Oculus Quest Pro
 Software:
-* Unity 2020.3.21f1
-* Oculus Integration 28.0
+* Unity 2020.3.25f1
+* Oculus Integration 44.0
 
 #### WebXR
 Hardware: Tested on Pixel 5a <br>
@@ -70,7 +67,6 @@ Hardware: Tested on Pixel 5a <br>
 <img src="./img/Experiment_Result.png" alt="Result" width="750" />
 </center>
 The evaluation metrics are lised in the above figure. Each README provides instructions on how to reproduce our results.
-
  </br>
 
 ## Camera-ready version
