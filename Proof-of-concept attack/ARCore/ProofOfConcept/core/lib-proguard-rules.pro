@@ -1,2 +1,0 @@
--keep class com.google.ar.core.** { *; }
--keep class com.google.android.filament.** { *; }
