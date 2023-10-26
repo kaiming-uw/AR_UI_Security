@@ -62,7 +62,7 @@ Software: We built our test cases using Three.js and WebXR API for necessary AR 
 </center>
 The evaluation metrics are lised in the above figure. Each README provides instructions on how to reproduce our results.
 
-[ARCore](Property_Code.ARCore/README.md)
+[ARCore](Property_Code/ARCore/README.md)
 [ARKit](Property_Code/ARKit/README.md)
 [Hololens](Property_Code/Hololens/README.md)
 [Oculus](Property_Code/Oculus/README.md)
