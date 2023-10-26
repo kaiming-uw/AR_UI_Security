@@ -35,33 +35,26 @@ Please ensure you have the following environments set up with all the dependenci
 to be able to reproduce the artifacts in the paper. 
 
 #### ARCore
-Hardware: Tested on Pixel 5a <br>
-Software: 
-* ARCore v1.32.0
-* Sceneform SDK v 1.20.5
+Hardware: Requires an Android device with support for ARCore. The full list of ARCore-supported devices can be found in https://developers.google.com/ar/devices. <br>
+Software: We built our test cases using ARCore v1.32.0 for AR functionalities and Sceneform SDK v1.20.5 for 3D content rendering.
 > Note: The Sceneform SDK is no longer supported by Google at the time this paper is published. 
 
 #### ARKit
-Hardware: Tested on iPhone 13 Pro <br> 
-Software: Xcode 
+Hardware: Requires an iOS device with an A9 or later processor. <br> 
+Software: We built our test cases using ARKit and RealityKit for necessary AR functionalities.  
 
 #### Hololens
-Hardware: Hololens 2
-Software:
-* Unity 2020.3.21f1
-* MRTK 2.7.2
-* Visual Studio 2022
+Hardware: Hololens 2<br>
+Software: We built our three test cases using Mixed Reality Toolkit (MRTK) 2.0 and Unity 2021.3.16f1.
 
 #### Oculus
-Hardware: Oculus Quest Pro
-Software:
-* Unity 2020.3.25f1
-* Oculus Integration 44.0
+Hardware: Requires a passthrough-enabled Oculus headset, such as Oculus 2, Oculus Pro, or Oculus 3
+Software: We built our three test cases using Oculus Integration SDK v44.0 and Unity version 2021.3.25f1.
 
 #### WebXR
-Hardware: Tested on Pixel 5a <br>
+Hardware: Requires a WebXR-compatible browser (Chrome) on an ARCore-supported device. <br>
+Software: We built our test cases using Three.js and WebXR API for necessary AR functionalities.
 
-## Details of the 
 
 ## Property Experiment Results 
 <center>
@@ -69,11 +62,11 @@ Hardware: Tested on Pixel 5a <br>
 </center>
 The evaluation metrics are lised in the above figure. Each README provides instructions on how to reproduce our results.
 
-[ARCore](Property_CodeARCore/README.md)
-[ARKit](Property_CodeARKit/README.md)
-[Hololens](Property_CodeHololens/README.md)
-[Oculus](Property_CodeOculus/README.md)
-[WebXR](Property_CodeWebXR/README.md)
+[ARCore](Property_Code.ARCore/README.md)
+[ARKit](Property_Code/ARKit/README.md)
+[Hololens](Property_Code/Hololens/README.md)
+[Oculus](Property_Code/Oculus/README.md)
+[WebXR](Property_Code/WebXR/README.md)
 
  </br>
 
