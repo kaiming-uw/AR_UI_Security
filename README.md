@@ -74,3 +74,11 @@ The evaluation metrics are lised in the above figure. Each README provides instr
 See attached `paper.pdf`.
 
 ### Citation
+
+@inproceedings{cheng2024arui,
+            title={When the User Is Inside the User Interface:
+              An Empirical Study of UI Security Properties in Augmented Reality,
+              author={Cheng, Kaiming and Tian, Jeffery F and Kohno, Tadayoshi and Roesner, Franziska},
+              booktitle={USENIX Security},
+            year={2024}
+          }
