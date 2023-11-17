@@ -75,6 +75,7 @@ See attached `paper.pdf`.
 
 ### Citation
 
+```
 @inproceedings{cheng2024arui,
             title={When the User Is Inside the User Interface:
               An Empirical Study of UI Security Properties in Augmented Reality,
@@ -82,3 +83,4 @@ See attached `paper.pdf`.
               booktitle={USENIX Security},
             year={2024}
           }
+```
