@@ -24,12 +24,12 @@ in the AR world that are transparent? To what extent, if any, does an object’s
 
 
 ### Part 2 -- Proof-of-concept attacks
-The proof-of-concept video for five attacks. (will upload the video soon)
-* Input forgery attack on ARCore (Demo Link)
-* Clickjacking attack: Implemented on ARKit (Demo Link) 
-* User input denial-of-service attack on Hololens (Demo Link)
-* Object-in-the-middle attack on Oculus (Demo Link)
-* Object erasure attack on WebXR (Demo Link)
+The proof-of-concept video for five attacks. [Demo Link](https://ar-sec.cs.washington.edu/ar_ui/)
+* Input forgery attack on ARCore 
+* Clickjacking attack: Implemented on ARKit 
+* User input denial-of-service attack on Hololens 
+* Object-in-the-middle attack on Oculus
+* Object erasure attack on WebXR 
 
 ## Prerequisites
 
